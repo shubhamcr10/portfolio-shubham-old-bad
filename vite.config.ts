@@ -7,4 +7,9 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig({
   plugins: [react()],
   base: "/portfolio-shubham-temp",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 });
